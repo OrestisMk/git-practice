@@ -1,5 +1,3 @@
-# .github/actions/prose-lint/action.yml
-
 name: "Prose Lint Action"
 description: "Run proselint or write-good on all Markdown files in the repository."
 runs:
