@@ -11,10 +11,10 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout code
+      - name: "Checkout code"
         uses: actions/checkout@v2
 
-      - name: Run Prose Lint Action
+      - name: "Run Prose Lint Action"
         uses: ./github/actions/prose-lint
         with:
-          linter: proselint # Or set to "write-good" if you prefer
+          linter: "proselint" # Or set to "write-good" if you prefer
