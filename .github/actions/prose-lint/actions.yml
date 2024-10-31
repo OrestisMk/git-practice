@@ -1,12 +1,14 @@
-name: "Prose Lint Action"
-description: "Run proselint or write-good on all Markdown files in the repository."
-runs:
-  using: "ubuntu-latest"
-  main: "./entrypoint.sh"
-  image: "Dockerfile"
-
+name: "Prose Linter"
+description: "Runs proselint or write-good on all .md files"
 inputs:
   linter:
-    description: "Choose either 'proselint' or 'write-good' for Markdown linting."
+    description: "The linter to use (proselint or write-good)"
     required: false
     default: "proselint"
+runs:
+  using: "composite"
+  steps:
+    - run: ./entrypoint.sh
+      shell: bash
+      env:
+        INPUT_LINTER: ${{ inputs.linter }}
