@@ -15,6 +15,6 @@ jobs:
         uses: actions/checkout@v2
 
       - name: "Run Prose Lint Action"
-        uses: ./github/actions/prose-lint
+        uses: ./github/actions/prose-lint/
         with:
           linter: "proselint" # Or set to "write-good" if you prefer
