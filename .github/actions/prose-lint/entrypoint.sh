@@ -1,5 +1,3 @@
-# .github/actions/prose-lint/entrypoint.sh
-
 #!/bin/bash
 
 set -e
