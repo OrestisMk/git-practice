@@ -1,5 +1,3 @@
-# .github/workflows/lint-prose.yml
-
 name: "Lint Markdown Files"
 
 on:
