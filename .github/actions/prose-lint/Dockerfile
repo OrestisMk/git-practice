@@ -1,5 +1,3 @@
-# .github/actions/prose-lint/Dockerfile
-
 FROM python:3.8
 
 # Install proselint and write-good
