@@ -1,7 +1,8 @@
 name: "Prose Lint Action"
 description: "Run proselint or write-good on all Markdown files in the repository."
 runs:
-  using: "docker"
+  using: "ubuntu-latest"
+  main: "./entrypoint.sh"
   image: "Dockerfile"
 
 inputs:
