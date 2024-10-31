@@ -1,0 +1,13 @@
+# .github/actions/prose-lint/action.yml
+
+name: "Prose Lint Action"
+description: "Run proselint or write-good on all Markdown files in the repository."
+runs:
+  using: "docker"
+  image: "Dockerfile"
+
+inputs:
+  linter:
+    description: "Choose either 'proselint' or 'write-good' for Markdown linting."
+    required: false
+    default: "proselint"
